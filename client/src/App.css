@@ -1,0 +1,26 @@
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.app-header {
+  height: 64px;
+  background: rgba(15,23,42,.85);
+  backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  padding: 0 28px;
+  font-weight: 600;
+  letter-spacing: .4px;
+  border-bottom: 1px solid rgba(255,255,255,.06);
+}
+
+.app-header span {
+  color: #38bdf8;
+}
+
+.canvas-wrapper {
+  flex: 1;
+  position: relative;
+}

@@ -1,0 +1,33 @@
+.react-flow__node {
+  border-radius: 16px;
+  background: linear-gradient(145deg,#020617,#020617);
+  border: 1px solid rgba(255,255,255,.08);
+  box-shadow: 0 20px 60px rgba(0,0,0,.5);
+  padding: 14px;
+  min-width: 240px;
+}
+
+.input-node textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #e5e7eb;
+  outline: none;
+  min-height: 100px;
+  font-size: 14px;
+  color: #e5e7eb;
+caret-color: #38bdf8;
+}
+
+.result-node {
+  white-space: pre-wrap;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #e5e7eb;                  /* main readable white */
+  background: linear-gradient(145deg, #020617, #020617);
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.08);
+}
+
