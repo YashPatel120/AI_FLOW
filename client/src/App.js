@@ -1,13 +1,11 @@
 import FlowBuilder from "./pages/FlowBuilder";
+import ServerLoader from "./components/ServerLoader";
+import useServerReady from "./hooks/useServerReady";
 
-import "./App.css";
+const App = () => {
+  const ready = useServerReady();
+  if (!ready) return <ServerLoader />;
+  return <FlowBuilder />;
+};
 
-const App = () => (
-  <div className="app-shell">
-    <div className="app-header">
-      AI Flow <span>Builder</span>
-    </div>
-    <FlowBuilder />
-  </div>
-);
 export default App;
