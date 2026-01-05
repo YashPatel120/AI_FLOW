@@ -7,7 +7,7 @@ const useServerReady = () => {
   useEffect(() => {
     const ping = async () => {
       try {
-        await axios.get("https://ai-flow-fg8s.onrender.com/api/health");
+        await axios.get("https://ai-flow-fg8s.onrender.com/api/health/health");
         setReady(true);
       } catch {
         setTimeout(ping, 2000);
